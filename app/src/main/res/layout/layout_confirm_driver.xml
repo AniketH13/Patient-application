@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/confirm_driver_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_margin"
+            android:paddingTop="8dp"
+            android:paddingRight="@dimen/activity_margin"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="32dp"
+                android:src="@drawable/ic_baseline_money_24"
+                app:tint="#737373" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/pay_by_cash"
+                android:textColor="#737373"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingRight="@dimen/activity_margin"
+            android:paddingTop="8dp"
+            android:paddingLeft="@dimen/activity_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/distance"
+                android:textColor="#737373"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/distance_travelled"
+                android:textColor="#737373"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingRight="@dimen/activity_margin"
+            android:paddingTop="8dp"
+            android:paddingLeft="@dimen/activity_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/fee"
+                android:textColor="#737373"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_fare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/Fare_total"
+                android:layout_gravity="center_vertical"
+                android:textColor="#737373"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_margin"
+            android:paddingTop="8dp"
+            android:paddingRight="@dimen/activity_margin"
+            android:paddingBottom="8dp">
+
+            <Button
+                android:id="@+id/btn_confirm_driver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="@string/confirm_driver"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/uber_move_bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
